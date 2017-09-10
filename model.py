@@ -48,7 +48,7 @@ def model(X_train, Y_train, X_test, Y_test, num_iterations, learning_rate, print
     
     return d
 
-d = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = 50000, learning_rate = 0.0001, print_cost = True)
+#d = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = 50000, learning_rate = 0.0001, print_cost = True)
 """
 index = 1
 plt.imshow(test_set_x[:,index].reshape((num_px, num_px, 3)))
