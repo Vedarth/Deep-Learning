@@ -14,3 +14,5 @@ def sigmoid(z):
     ### END CODE HERE ###
     
     return s
+
+#print ("sigmoid([0, 2]) = " + str(sigmoid(np.array([0,2]))))

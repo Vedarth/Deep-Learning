@@ -19,3 +19,10 @@ def initialize_with_zeros(dim):
     assert(isinstance(b, float) or isinstance(b, int))
     
     return w, b
+
+"""
+dim = 2
+w, b = initialize_with_zeros(dim)
+print ("w = " + str(w))
+print ("b = " + str(b))
+"""
