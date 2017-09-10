@@ -33,3 +33,5 @@ def predict(w, b, X):
     assert(Y_prediction.shape == (1, m))
     
     return Y_prediction
+
+#print ("predictions = " + str(predict(w, b, X)))
