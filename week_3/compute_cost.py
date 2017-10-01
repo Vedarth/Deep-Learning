@@ -24,3 +24,8 @@ def compute_cost(A2, Y, parameters):
     assert(isinstance(cost, float))
     
     return cost
+
+def main():
+    A2, Y_assess, parameters = compute_cost_test_case()
+
+    print("cost = " + str(compute_cost(A2, Y_assess, parameters)))
