@@ -17,3 +17,8 @@ def predict(parameters, X):
     ### END CODE HERE ###
     
     return predictions
+
+def main():
+    parameters, X_assess = predict_test_case()
+    predictions = predict(parameters, X_assess)
+    print("predictions mean = " + str(np.mean(predictions)))
