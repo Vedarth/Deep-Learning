@@ -32,3 +32,9 @@ def forward_propagation(X, parameters):
              "A2": A2}
     
     return A2, cache
+
+def main():
+    X_assess, parameters = forward_propagation_test_case()
+    A2, cache = forward_propagation(X_assess, parameters)
+    # Note: we use the mean here just to make sure that your output matches ours. 
+    print(np.mean(cache['Z1']) ,np.mean(cache['A1']),np.mean(cache['Z2']),np.mean(cache['A2']))
