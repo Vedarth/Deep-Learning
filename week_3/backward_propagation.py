@@ -24,3 +24,12 @@ def backward_propagation(parameters, cache, X, Y):
     A1 = cache['A1']
     A2 = cache['A2']
     ### END CODE HERE ###
+    # Backward propagation: calculate dW1, db1, dW2, db2. 
+    ### START CODE HERE ### (≈ 6 lines of code, corresponding to 6 equations on slide above)
+    dZ2 = (A2-Y)
+    dW2 = np.dot(dZ2,A1.T)/m
+    db2 = np.sum(dZ2,axis=1,keepdims=True)/m
+    dZ1 = (np.multiply(np.transpose(W2),dZ2) * (1-np.power(A1,2)))
+    dW1 = (1/m) * (np.dot(dZ1,X.T))
+    db1 = np.sum(dZ1,axis = 1,keepdims = True)/m
+    ### END CODE HERE ###
