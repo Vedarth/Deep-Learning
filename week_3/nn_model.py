@@ -3,11 +3,9 @@ import dataset
 import initialize_parameters
 import layer_sizes
 import forward_propagation
-import compute_cost.py
-import backward_propagation.py
-import update_parameters.py
-
-
+import compute_cost
+import backward_propagation
+import update_parameters
 
 
 def nn_model(X, Y, n_h, num_iterations = 10000, print_cost=False):
