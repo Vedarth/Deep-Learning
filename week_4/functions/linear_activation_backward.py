@@ -27,3 +27,16 @@ def linear_activation_backward(dA, cache, activation):
         ### END CODE HERE ###
     
     return dA_prev, dW, db
+def test():
+    AL, linear_activation_cache = linear_activation_backward_test_case()
+
+    dA_prev, dW, db = linear_activation_backward(AL, linear_activation_cache, activation = "sigmoid")
+    print ("sigmoid:")
+    print ("dA_prev = "+ str(dA_prev))
+    print ("dW = " + str(dW))
+    print ("db = " + str(db) + "\n")
+    dA_prev, dW, db = linear_activation_backward(AL, linear_activation_cache, activation = "relu")
+    print ("relu:")
+    print ("dA_prev = "+ str(dA_prev))
+    print ("dW = " + str(dW))
+    print ("db = " + str(db))
