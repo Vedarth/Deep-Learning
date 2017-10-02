@@ -21,3 +21,7 @@ def compute_cost(AL, Y):
     assert(cost.shape == ())
     
     return cost
+def test():
+    Y, AL = compute_cost_test_case()
+
+    print("cost = " + str(compute_cost(AL, Y)))
