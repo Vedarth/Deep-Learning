@@ -34,3 +34,9 @@ def L_model_forward(X, parameters):
     assert(AL.shape == (1,X.shape[1]))
             
     return AL, caches
+
+def test():
+    X, parameters = L_model_forward_test_case_2hidden()
+    AL, caches = L_model_forward(X, parameters)
+    print("AL = " + str(AL))
+    print("Length of caches list = " + str(len(caches)))
