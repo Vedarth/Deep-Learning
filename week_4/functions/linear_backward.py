@@ -25,3 +25,11 @@ def linear_backward(dZ, cache):
     assert (db.shape == b.shape)
     
     return dA_prev, dW, db
+
+def test():
+    dZ, linear_cache = linear_backward_test_case()
+
+    dA_prev, dW, db = linear_backward(dZ, linear_cache)
+    print ("dA_prev = "+ str(dA_prev))
+    print ("dW = " + str(dW))
+    print ("db = " + str(db))
