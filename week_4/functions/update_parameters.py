@@ -21,3 +21,11 @@ def update_parameters(parameters, grads, learning_rate):
         parameters["b" + str(l+1)] =parameters["b" + str(l+1)]  - learning_rate*grads["db" + str(l+1)]
     ### END CODE HERE ###
     return parameters
+
+def test():
+    parameters, grads = update_parameters_test_case()
+    parameters = update_parameters(parameters, grads, 0.1)
+    print ("W1 = "+ str(parameters["W1"]))
+    print ("b1 = "+ str(parameters["b1"]))
+    print ("W2 = "+ str(parameters["W2"]))
+    print ("b2 = "+ str(parameters["b2"]))
