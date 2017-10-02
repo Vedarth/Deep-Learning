@@ -43,3 +43,7 @@ def L_model_backward(AL, Y, caches):
         ### END CODE HERE ###
 
     return grads
+def test():
+    AL, Y_assess, caches = L_model_backward_test_case()
+    grads = L_model_backward(AL, Y_assess, caches)
+    print_grads(grads)
