@@ -32,3 +32,10 @@ def linear_activation_forward(A_prev, W, b, activation):
     cache = (linear_cache, activation_cache)
 
     return A, cache
+
+def test():
+    A_prev, W, b = linear_activation_forward_test_case()
+    A, linear_activation_cache = linear_activation_forward(A_prev, W, b, activation = "sigmoid")
+    print("With sigmoid: A = " + str(A))
+    A, linear_activation_cache = linear_activation_forward(A_prev, W, b, activation = "relu")
+    print("With ReLU: A = " + str(A))
