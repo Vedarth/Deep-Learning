@@ -89,3 +89,6 @@ def two_layer_model(X, Y, layers_dims, learning_rate = 0.0075, num_iterations = 
     return parameters
 def test():
     parameters = two_layer_model(train_x, train_y, layers_dims = (n_x, n_h, n_y), num_iterations = 2500, print_cost=True)
+predictions_train = predict(train_x, train_y, parameters)
+
+predictions_test = predict(test_x, test_y, parameters)
