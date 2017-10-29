@@ -184,3 +184,10 @@ def backward_propagation_with_regularization(X, Y, cache, lambd):
     return gradients
 
 
+X_assess, Y_assess, cache = backward_propagation_with_regularization_test_case()
+
+grads = backward_propagation_with_regularization(X_assess, Y_assess, cache, lambd = 0.7)
+print ("dW1 = "+ str(grads["dW1"]))
+print ("dW2 = "+ str(grads["dW2"]))
+print ("dW3 = "+ str(grads["dW3"]))
+
