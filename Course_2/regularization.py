@@ -86,3 +86,19 @@ def model(X, Y, learning_rate = 0.3, num_iterations = 30000, print_cost = True, 
     plt.show()
     
     return parameters
+
+
+
+parameters = model(train_X, train_Y)
+print ("On the training set:")
+predictions_train = predict(train_X, train_Y, parameters)
+print ("On the test set:")
+predictions_test = predict(test_X, test_Y, parameters)
+
+plt.title("Model without regularization")
+axes = plt.gca()
+axes.set_xlim([-0.75,0.40])
+axes.set_ylim([-0.75,0.65])
+plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
+
+
