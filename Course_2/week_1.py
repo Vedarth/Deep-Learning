@@ -103,3 +103,13 @@ def initialize_parameters_zeros(layers_dims):
         parameters['b' + str(l)] = np.zeros((layers_dims[1], 1))
         ### END CODE HERE ###
     return parameters
+
+
+
+#Function Call
+
+parameters = initialize_parameters_zeros([3,2,1])
+print("W1 = " + str(parameters["W1"]))
+print("b1 = " + str(parameters["b1"]))
+print("W2 = " + str(parameters["W2"]))
+print("b2 = " + str(parameters["b2"]))
