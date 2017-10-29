@@ -159,3 +159,13 @@ def initialize_parameters_random(layers_dims):
         ### END CODE HERE ###
 
     return parameters
+
+
+
+
+#function call for random initialization
+parameters = initialize_parameters_random([3, 2, 1])
+print("W1 = " + str(parameters["W1"]))
+print("b1 = " + str(parameters["b1"]))
+print("W2 = " + str(parameters["W2"]))
+print("b2 = " + str(parameters["b2"]))
