@@ -176,3 +176,15 @@ print ("On the train set:")
 predictions_train = predict(train_X, train_Y, parameters)
 print ("On the test set:")
 predictions_test = predict(test_X, test_Y, parameters)
+
+#Prediction results
+print (predictions_train)
+print (predictions_test)
+
+
+#visualization of random initialization
+plt.title("Model with large random initialization")
+axes = plt.gca()
+axes.set_xlim([-1.5,1.5])
+axes.set_ylim([-1.5,1.5])
+plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
