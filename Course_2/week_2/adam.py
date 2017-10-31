@@ -33,3 +33,16 @@ def initialize_adam(parameters) :
     ### END CODE HERE ###
     
     return v, s
+
+
+parameters = initialize_adam_test_case()
+
+v, s = initialize_adam(parameters)
+print("v[\"dW1\"] = " + str(v["dW1"]))
+print("v[\"db1\"] = " + str(v["db1"]))
+print("v[\"dW2\"] = " + str(v["dW2"]))
+print("v[\"db2\"] = " + str(v["db2"]))
+print("s[\"dW1\"] = " + str(s["dW1"]))
+print("s[\"db1\"] = " + str(s["db1"]))
+print("s[\"dW2\"] = " + str(s["dW2"]))
+print("s[\"db2\"] = " + str(s["db2"]))
