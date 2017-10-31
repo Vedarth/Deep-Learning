@@ -25,3 +25,12 @@ def initialize_velocity(parameters):
         ### END CODE HERE ###
         
     return v
+
+
+parameters = initialize_velocity_test_case()
+
+v = initialize_velocity(parameters)
+print("v[\"dW1\"] = " + str(v["dW1"]))
+print("v[\"db1\"] = " + str(v["db1"]))
+print("v[\"dW2\"] = " + str(v["dW2"]))
+print("v[\"db2\"] = " + str(v["db2"]))
