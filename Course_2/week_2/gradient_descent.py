@@ -25,3 +25,14 @@ def update_parameters_with_gd(parameters, grads, learning_rate):
         ### END CODE HERE ###
         
     return parameters
+
+
+
+
+def main():
+    parameters, grads, learning_rate = update_parameters_with_gd_test_case()
+    parameters = update_parameters_with_gd(parameters, grads, learning_rate)
+    print("W1 = " + str(parameters["W1"]))
+    print("b1 = " + str(parameters["b1"]))
+    print("W2 = " + str(parameters["W2"]))  
+    print("b2 = " + str(parameters["b2"]))
