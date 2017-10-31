@@ -40,3 +40,15 @@ def random_mini_batches(X, Y, mini_batch_size = 64, seed = 0):
         mini_batches.append(mini_batch)
     
     return mini_batches
+
+
+X_assess, Y_assess, mini_batch_size = random_mini_batches_test_case()
+mini_batches = random_mini_batches(X_assess, Y_assess, mini_batch_size)
+
+print ("shape of the 1st mini_batch_X: " + str(mini_batches[0][0].shape))
+print ("shape of the 2nd mini_batch_X: " + str(mini_batches[1][0].shape))
+print ("shape of the 3rd mini_batch_X: " + str(mini_batches[2][0].shape))
+print ("shape of the 1st mini_batch_Y: " + str(mini_batches[0][1].shape))
+print ("shape of the 2nd mini_batch_Y: " + str(mini_batches[1][1].shape)) 
+print ("shape of the 3rd mini_batch_Y: " + str(mini_batches[2][1].shape))
+print ("mini batch sanity check: " + str(mini_batches[0][0][0][0:3]))
