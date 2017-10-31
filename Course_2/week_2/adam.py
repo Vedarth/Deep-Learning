@@ -109,3 +109,20 @@ def update_parameters_with_adam(parameters, grads, v, s, t, learning_rate = 0.01
         ### END CODE HERE ###
 
     return parameters, v, s
+
+
+parameters, grads, v, s = update_parameters_with_adam_test_case()
+parameters, v, s  = update_parameters_with_adam(parameters, grads, v, s, t = 2)
+
+print("W1 = " + str(parameters["W1"]))
+print("b1 = " + str(parameters["b1"]))
+print("W2 = " + str(parameters["W2"]))
+print("b2 = " + str(parameters["b2"]))
+print("v[\"dW1\"] = " + str(v["dW1"]))
+print("v[\"db1\"] = " + str(v["db1"]))
+print("v[\"dW2\"] = " + str(v["dW2"]))
+print("v[\"db2\"] = " + str(v["db2"]))
+print("s[\"dW1\"] = " + str(s["dW1"]))
+print("s[\"db1\"] = " + str(s["db1"]))
+print("s[\"dW2\"] = " + str(s["dW2"]))
+print("s[\"db2\"] = " + str(s["db2"]))
