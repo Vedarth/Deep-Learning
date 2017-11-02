@@ -106,3 +106,5 @@ def model(X_train, Y_train, X_test, Y_test, learning_rate = 0.0001,
         print("Test Accuracy:", accuracy.eval({X: X_test, Y: Y_test}))
         
         return parameters
+
+parameters = model(X_train, Y_train, X_test, Y_test)
