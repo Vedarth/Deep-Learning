@@ -34,3 +34,8 @@ def one_hot_matrix(labels, C):
     ### END CODE HERE ###
     
     return one_hot
+
+
+labels = np.array([1,2,3,0,2,1])
+one_hot = one_hot_matrix(labels, C = 4)
+print ("one_hot = " + str(one_hot))
