@@ -34,3 +34,8 @@ def cost(logits, labels):
     ### END CODE HERE ###
     
     return cost
+
+
+logits = sigmoid(np.array([0.2,0.4,0.7,0.9]))
+cost = cost(logits, np.array([0,0,1,1]))
+print ("cost = " + str(cost))
