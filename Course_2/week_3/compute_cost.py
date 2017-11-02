@@ -19,3 +19,12 @@ def compute_cost(Z3, Y):
     ### END CODE HERE ###
     
     return cost
+
+tf.reset_default_graph()
+
+with tf.Session() as sess:
+    X, Y = create_placeholders(12288, 6)
+    parameters = initialize_parameters()
+    Z3 = forward_propagation(X, parameters)
+    cost = compute_cost(Z3, Y)
+    print("cost = " + str(cost))
