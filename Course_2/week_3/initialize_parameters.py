@@ -31,3 +31,12 @@ def initialize_parameters():
                   "b3": b3}
     
     return parameters
+
+
+tf.reset_default_graph()
+with tf.Session() as sess:
+    parameters = initialize_parameters()
+    print("W1 = " + str(parameters["W1"]))
+    print("b1 = " + str(parameters["b1"]))
+    print("W2 = " + str(parameters["W2"]))
+    print("b2 = " + str(parameters["b2"]))
