@@ -8,3 +8,4 @@ from tf_utils import load_dataset, random_mini_batches, convert_to_one_hot, pred
 
 %matplotlib inline
 np.random.seed(1)
+
