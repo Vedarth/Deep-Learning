@@ -28,3 +28,13 @@ def forward_propagation(X, parameters):
     ### END CODE HERE ###
     
     return Z3
+
+
+
+tf.reset_default_graph()
+
+with tf.Session() as sess:
+    X, Y = create_placeholders(12288, 6)
+    parameters = initialize_parameters()
+    Z3 = forward_propagation(X, parameters)
+    print("Z3 = " + str(Z3))
