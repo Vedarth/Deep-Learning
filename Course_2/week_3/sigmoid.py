@@ -25,3 +25,7 @@ def sigmoid(z):
     ### END CODE HERE ###
     
     return result
+
+
+print ("sigmoid(0) = " + str(sigmoid(0)))
+print ("sigmoid(12) = " + str(sigmoid(12)))
